@@ -4,6 +4,7 @@ import 'listview_screen.dart';
 import 'gridview_screen.dart';
 import 'cardview_screen.dart';
 import 'stack_layout_screen.dart';
+import 'stack_image_screen.dart';
 
 class DashboardScreen extends StatelessWidget {
   const DashboardScreen({super.key});
@@ -105,6 +106,37 @@ class DashboardScreen extends StatelessWidget {
                           );
                         },
                       ),
+
+
+
+                      const SizedBox(height: 20),
+                      _buildDashboardCard(
+                        context,
+                        title: 'StackImage',
+                        subtitle: 'Explore Stack Image examples',
+                        icon: Icons.credit_card_rounded,
+                        gradient: LinearGradient(
+                          colors: [
+                            Colors.green.shade400,
+                            Colors.green.shade600,
+                          ],
+                        ),
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const StackImageScreen(),
+                            ),
+                          );
+                        },
+                      ),
+
+
+
+
+
+
+
                       const SizedBox(height: 20),
                       _buildDashboardCard(
                         context,

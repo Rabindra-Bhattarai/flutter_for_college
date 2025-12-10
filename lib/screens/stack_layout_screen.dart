@@ -6,7 +6,6 @@ class StackLayoutScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
       body: SafeArea(
         child: Stack(
           clipBehavior: Clip.none,
@@ -39,8 +38,6 @@ class StackLayoutScreen extends StatelessWidget {
             //     child: const Text('Hello I am third container'),
             // ))
 
-
-
             Positioned(
                 bottom: -20,
                 right:400/2-50,
@@ -50,7 +47,6 @@ class StackLayoutScreen extends StatelessWidget {
                   color: Colors.red,
                   child: const Text('Hello I am third container'),
             ))
-
           ],
         ),
       ),
