@@ -132,6 +132,7 @@ class _ListViewScreenState extends State<ListViewScreen> {
                       label: const Text('Add Student'),
                       style: ElevatedButton.styleFrom(
                         padding: const EdgeInsets.symmetric(vertical: 15),
+                        // fontFamily:'OpenSans Bold',
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(12),
                         ),
